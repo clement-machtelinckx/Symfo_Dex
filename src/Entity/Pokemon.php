@@ -34,13 +34,13 @@ class Pokemon
     private ?int $attack = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $defence = null;
+    private ?int $defense = null;
 
     #[ORM\Column(nullable: true)]
     private ?int $specialAttack = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $specialDefence = null;
+    private ?int $specialDefense = null;
 
     #[ORM\Column(nullable: true)]
     private ?int $speed = null;
@@ -122,14 +122,14 @@ class Pokemon
         return $this;
     }
 
-    public function getDefence(): ?int
+    public function getDefense(): ?int
     {
-        return $this->defence;
+        return $this->defense;
     }
 
-    public function setDefence(?int $defence): static
+    public function setDefense(?int $defense): static
     {
-        $this->defence = $defence;
+        $this->defense = $defense;
 
         return $this;
     }
@@ -146,14 +146,14 @@ class Pokemon
         return $this;
     }
 
-    public function getSpecialDefence(): ?int
+    public function getSpecialDefense(): ?int
     {
-        return $this->specialDefence;
+        return $this->specialDefense;
     }
 
-    public function setSpecialDefence(?int $specialDefence): static
+    public function setSpecialDefense(?int $specialDefense): static
     {
-        $this->specialDefence = $specialDefence;
+        $this->specialDefense = $specialDefense;
 
         return $this;
     }

@@ -6,10 +6,10 @@ services:
     environment:
       MYSQL_DATABASE: api_dex
       MYSQL_ROOT_PASSWORD: root
-  web:
+  app:
     build: .
     ports:
-      - "8081:80"
+      - "4041:80"
     volumes:
       - ./docker/apache.conf:/etc/apache2/sites-available/000-default.conf
       - .:/var/www

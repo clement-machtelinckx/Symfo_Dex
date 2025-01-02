@@ -24,7 +24,7 @@ class Pokemon
     #[ORM\Column(nullable: true)]
     private ?int $height = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: 'integer', unique: true)]
     private ?int $pokeId = null;
 
     #[ORM\Column(nullable: true)]
